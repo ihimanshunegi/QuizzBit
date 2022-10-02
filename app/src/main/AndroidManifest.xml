@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.QuizzBit">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/quiz"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/quiz"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QUIZAPP">
+        <activity
+            android:name="com.example.QuizzBit.activities.splashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.QuizzBit.activities.profileActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name="com.example.QuizzBit.activities.result"
+            android:exported="true" />
+        <activity
+            android:name="com.example.QuizzBit.activities.QuestionActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ques" />
+        <activity
+            android:name="com.example.QuizzBit.activities.Signup"
+            android:exported="true" />
+        <activity
+            android:name="com.example.QuizzBit.activities.Login"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name="com.example.QuizzBit.activities.LoginIntro"
+            android:exported="true"></activity>
+        <activity
+            android:name="com.example.QuizzBit.activities.MainActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>

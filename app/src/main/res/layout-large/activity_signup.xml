@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Login"
+    >
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiesignup"
+        android:layout_width="3500dp"
+        android:layout_height="350dp"
+        app:lottie_rawRes="@raw/signup"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="32dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:gravity="center_vertical"
+        
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottiesignup"
+        
+        >
+
+        <TextView
+            android:id="@+id/titleSp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay Connected" />
+
+        <TextView
+            android:id="@+id/subtitleSp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your email address and password \n to get access to your account"
+            android:layout_marginTop="16dp"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddressSp"
+            android:background="@drawable/etprimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="16sp"
+            android:ems="10"
+            android:layout_marginTop="32dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPasswordSp"
+            android:background="@drawable/etprimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextconfirmPasswordSp"
+            android:background="@drawable/etprimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:layout_marginTop="16dp"
+            />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:backgroundTint="#3490dc"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:layout_marginTop="24dp"
+            />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?Login"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:textAlignment="center"/>
+        
+    </LinearLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
